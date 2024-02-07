@@ -7,18 +7,18 @@ const scoreBoard_div = document.querySelector(".scoreboard");
 //const result_p = document.querySelector(".result > p");
 
 function getResult(userChoice, computerChoice, result) {
-    if (result === "draw") {
-        //result_p.innerHTML = `${convertToWord(playerChoice)} equals ${convertToWord(computerChoice)}. You draw.`;
-    } else if (result === "win") {
+    if (result === "win") {
         userScore++;    // increment user score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
         //result_p.innerHTML = `${convertToWord(playerChoice)} beats ${convertToWord(computerChoice)}. You win!`;
-    } else {
+    } else if (result === "lose") {
         computerScore++;    // increment computer score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
         //result_p.innerHTML = `${convertToWord(playerChoice)} loses to ${convertToWord(computerChoice)}. You lose.`;
+    } else {
+        //result_p.innerHTML = `${convertToWord(playerChoice)} equals ${convertToWord(computerChoice)}. You draw.`;
     }
 }
 
