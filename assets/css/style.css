@@ -48,7 +48,7 @@ body {
 }
 
 header {
-    background-color: #C00200;
+    background-color: #ffffff;
     padding: 0 1rem;
     /* position: fixed; - Hides content under header - not desired yet.. */
     z-index: 99;
@@ -58,11 +58,12 @@ header {
     justify-content: space-between;
     align-items: baseline;
     text-align: center;
+    padding: 10px;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: #1A2E46;
 }
 
 button {
