@@ -20,7 +20,7 @@
 }
 
 .badge {
-    background: #C00200;
+    background: #E2584D;
     border-radius: 2px;
     color: white;
     font-size: 14px;
@@ -29,14 +29,14 @@
 
 #user_label {
     position: absolute;
-    top: 30px;
-    left: -25px;
+    top: -20px;
+    left: 10px;
 }
 
 #computer_label {
     position: absolute;
-    top: 30px;
-    right: -30px;
+    top: -20px;
+    right: 10px;
 }
 
 body {
