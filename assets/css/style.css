@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* include the padding and border in page's total width and height */
+    box-sizing: border-box;
+    /* include the padding and border in page's total width and height */
     font-family: Roboto, sans-serif;
 }
 
@@ -43,10 +44,11 @@ body {
     background-color: #1A2E46;
     font-family: Roboto, sans-serif;
     text-align: center;
+    color: white;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #C00200;
     padding: 0 1rem;
     /* position: fixed; - Hides content under header - not desired yet.. */
     z-index: 99;
@@ -60,7 +62,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 button {
@@ -89,4 +91,20 @@ button:hover {
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#weather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    padding-left: 1000px;
 }
