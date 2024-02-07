@@ -4,25 +4,25 @@ let computerScore = 0;
 const userScore_span = document.getElementById("user_score");
 const computerScore_span = document.getElementById("computer_score");
 const scoreBoard_div = document.querySelector(".scoreboard");
-//const result_p = document.querySelector(".result > p");
+const moves_div = document.getElementById("moves");
 
 function getResult(userChoice, computerChoice, result) {
     if (result === "win") {
         userScore++;    // increment user score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
-        //result_p.innerHTML = `${convertToWord(playerChoice)} beats ${convertToWord(computerChoice)}. You win!`;
+        moves_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
         scoreBoard_div.classList.add('green-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('green-glow') }, 600);
     } else if (result === "lose") {
         computerScore++;    // increment computer score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
-        //result_p.innerHTML = `${convertToWord(playerChoice)} loses to ${convertToWord(computerChoice)}. You lose.`;
+        moves_div.innerHTML = `${userChoice} loses to ${computerChoice}. You lose.`;
         scoreBoard_div.classList.add('red-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('red-glow') }, 600);
     } else {
-        //result_p.innerHTML = `${convertToWord(playerChoice)} equals ${convertToWord(computerChoice)}. You draw.`;
+        moves_div.innerHTML = `${userChoice} draws with ${computerChoice}. It's a draw.`;
         scoreBoard_div.classList.add('gray-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('gray-glow') }, 600);
     }
@@ -50,5 +50,5 @@ function play(playerChoice) {
         result = "Computer wins!";
     }
     // Display result
-    document.getElementById('result').innerHTML = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
+    //document.getElementById('result').innerHTML = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
   }

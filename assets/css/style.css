@@ -78,13 +78,12 @@ header a {
     font-size: 16px;
     border-radius: 12px;
     margin: 5px;
-}*/
+}
 
 button:hover {
     background-color: #555555;
-    /* Dark grey */
     cursor: pointer;
-}
+}*/
 
 .choices {
     margin-top: 50px;
