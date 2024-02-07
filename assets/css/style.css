@@ -20,7 +20,7 @@
 }
 
 .badge {
-    background: #E2584D;
+    background: #C00200;
     border-radius: 2px;
     color: white;
     font-size: 14px;
@@ -40,7 +40,7 @@
 }
 
 body {
-    background-color: #09005b;
+    background-color: #1A2E46;
     font-family: Roboto, sans-serif;
     text-align: center;
 }
