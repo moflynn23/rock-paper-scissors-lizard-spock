@@ -35,11 +35,11 @@
 
     <!-- Choices -->
     <div id="choices">
-      <button onclick="play('rock')">Rock</button>
-      <button onclick="play('paper')">Paper</button>
-      <button onclick="play('scissors')">Scissors</button>
-      <button onclick="play('lizard')">Lizard</button>
-      <button onclick="play('spock')">Spock</button>
+      <div class="choice" onclick="play('rock')"><i class="fa-solid fa-hand-fist"></i></div>
+      <div class="choice" onclick="play('paper')"><i class="fa-solid fa-hand"></i></div>
+      <div class="choice" onclick="play('scissors')"><i class="fa-solid fa-hand-peace"></i></div>
+      <div class="choice" onclick="play('lizard')"><i class="fa-solid fa-hand-lizard"></i></div>
+      <div class="choice" onclick="play('spock')"><i class="fa-solid fa-hand-spock"></i></div>
     </div>
 
     <p id="action_message">Make your move.</p>
@@ -47,6 +47,7 @@
     <!-- Footer -->
     <div class="footer">The Wolfpack &copy; 2024</div>
     <script src="assets/js/script.js" charset="UTF-8"></script>
+    <script src="https://kit.fontawesome.com/f68f4b981c.js" crossorigin="anonymous"></script>
 
     <!-- Weather API inside footer - for now -->
     <script
