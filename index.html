@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Rock Paper Scissors Lizard Spock</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
+    <header>
+      <div id="header">
+        <a href="index.html">
+          <h1 id="title">ROCHAMBEAU</h1>
+        </a>
+      </div>
+    </header>
 
     <!-- Scoreboard -->
     <div class="scoreboard">
-        <div id="user_label" class="badge">
-            user
-        </div>
-        <div id="computer_label" class="badge">
-            comp
-        </div>
-        <span id="user_score">
-            0
-        </span>
-        :
-        <span id="computer_score">
-            0
-        </span>
+      <div id="user_label" class="badge">user</div>
+      <div id="computer_label" class="badge">comp</div>
+      <span id="user_score"> 0 </span>
+      :
+      <span id="computer_score"> 0 </span>
     </div>
 
     <!-- Moves and Result -->
+    <div id="result"></div>
 
     <!-- Choices -->
+    <div id="choices">
+      <button onclick="play('rock')">Rock</button>
+      <button onclick="play('paper')">Paper</button>
+      <button onclick="play('scissors')">Scissors</button>
+      <button onclick="play('lizard')">Lizard</button>
+      <button onclick="play('spock')">Spock</button>
+    </div>
 
     <!-- Footer -->
-
-</body>
+  </body>
 </html>
