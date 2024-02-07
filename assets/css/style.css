@@ -9,7 +9,7 @@
 
 .scoreboard {
     margin: 40px auto;
-    border: 3px solid white;
+    border: 3px solid #E2584D;
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;
@@ -29,14 +29,14 @@
 
 #user_label {
     position: absolute;
-    top: -20px;
-    left: 10px;
+    top: -21px;
+    left: 15px;
 }
 
 #computer_label {
     position: absolute;
-    top: -20px;
-    right: 10px;
+    top: -21px;
+    right: 15px;
 }
 
 body {
