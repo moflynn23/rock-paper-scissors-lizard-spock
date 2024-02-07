@@ -12,13 +12,19 @@ function getResult(userChoice, computerChoice, result) {
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
         //result_p.innerHTML = `${convertToWord(playerChoice)} beats ${convertToWord(computerChoice)}. You win!`;
+        scoreBoard_div.classList.add('green-glow');
+        setTimeout(function() { scoreBoard_div.classList.remove('green-glow') }, 600);
     } else if (result === "lose") {
         computerScore++;    // increment computer score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
         //result_p.innerHTML = `${convertToWord(playerChoice)} loses to ${convertToWord(computerChoice)}. You lose.`;
+        scoreBoard_div.classList.add('red-glow');
+        setTimeout(function() { scoreBoard_div.classList.remove('red-glow') }, 600);
     } else {
         //result_p.innerHTML = `${convertToWord(playerChoice)} equals ${convertToWord(computerChoice)}. You draw.`;
+        scoreBoard_div.classList.add('gray-glow');
+        setTimeout(function() { scoreBoard_div.classList.remove('gray-glow') }, 600);
     }
 }
 

@@ -9,7 +9,8 @@
 
 .scoreboard {
     margin: 40px auto;
-    border: 3px solid #E2584D;
+    /*border: 3px solid #E2584D;*/
+    border: 3px solid white;
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;
@@ -29,13 +30,13 @@
 
 #user_label {
     position: absolute;
-    top: -21px;
+    top: -23px;
     left: 15px;
 }
 
 #computer_label {
     position: absolute;
-    top: -21px;
+    top: -23px;
     right: 15px;
 }
 
@@ -89,4 +90,19 @@ button:hover {
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.green-glow {
+    border: 3px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 3px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 3px solid #464647;
+    box-shadow: 0 0 10px #25292b;
 }
