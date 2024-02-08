@@ -67,36 +67,25 @@ header a {
     color: #1A2E46;
 }
 
-/*button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    margin: 5px;
+#levels {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
 }
 
-button:hover {
-    background-color: #555555;
-    cursor: pointer;
-}*/
+#best_ofs {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
 
-.levels {
-    margin-top: 50px;
-    text-align: center;
+.level:hover {
+    cursor: pointer;
 }
 
 .choices {
     margin-top: 50px;
     text-align: center;
-}
-
-.level:hover {
-    cursor: pointer;
 }
 
 .choice {

@@ -1,12 +1,21 @@
 // cache the DOM
 let userScore = 0;
 let computerScore = 0;
+let difficultyLevel = document.getElementById('level').value;
+let bestOf = document.getElementById('best_of').value;
 const userScore_span = document.getElementById("user_score");
 const computerScore_span = document.getElementById("computer_score");
 const scoreBoard_div = document.querySelector(".scoreboard");
 const moves_div = document.getElementById("moves");
 
 function getResult(userChoice, computerChoice, result) {
+
+    // difficulty level value selected
+    difficultyLevel = document.getElementById('level').value;
+
+    // best of value selected
+    bestOf = document.getElementById('best_of').value;
+    
     if (result === "win") {
         userScore++;    // increment user score
         userScore_span.innerHTML = userScore;
@@ -14,8 +23,16 @@ function getResult(userChoice, computerChoice, result) {
         moves_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
         scoreBoard_div.classList.add('green-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('green-glow') }, 600);
+
+        if (userScore >= bestOf) {
+            alert('Game over. You win!');
+        }
+
     } else if (result === "lose") {
-        computerScore++;    // increment computer score
+        // loop through difficulty level number
+        for(let i=0; i<difficultyLevel; i++) {
+            computerScore++;    // increment computer score
+        }
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
         moves_div.innerHTML = `${userChoice} loses to ${computerChoice}. You lose.`;
