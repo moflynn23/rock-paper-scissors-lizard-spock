@@ -162,6 +162,7 @@ input[type=reset] {
   .tooltip {
     position: relative;
     display: inline-block;
+    margin-left: 1%;
   }
   
   .tooltip .tooltiptext {
