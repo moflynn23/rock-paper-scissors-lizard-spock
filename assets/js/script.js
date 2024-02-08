@@ -46,14 +46,7 @@ function getBestOf() {
                 resetScore();
             });
         });
-    } else {
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                alert("Game over. It's a draw.");
-                resetScore();
-            });
-        });
-    }
+    } 
 }
 
 // Check result, increment scores, update scoreboard, results message and add glow to scoreboard.
@@ -66,7 +59,7 @@ function getResult(userChoice, computerChoice, result) {
         userScore++;    // increment user score
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
-        moves_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
+        moves_div.innerHTML = `${userChoice.toUpperCase()} beats ${computerChoice.toUpperCase()}. You win!`;
         scoreBoard_div.classList.add('green-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('green-glow') }, 600);
         getBestOf();
@@ -77,12 +70,12 @@ function getResult(userChoice, computerChoice, result) {
         }
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
-        moves_div.innerHTML = `${userChoice} loses to ${computerChoice}. You lose.`;
+        moves_div.innerHTML = `${userChoice.toUpperCase()} loses to ${computerChoice.toUpperCase()}. You lose.`;
         scoreBoard_div.classList.add('red-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('red-glow') }, 600);
         getBestOf();
     } else {
-        moves_div.innerHTML = `${userChoice} draws with ${computerChoice}. It's a draw.`;
+        moves_div.innerHTML = `${userChoice.toUpperCase()} draws with ${computerChoice.toUpperCase()}. It's a draw.`;
         scoreBoard_div.classList.add('gray-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('gray-glow') }, 600);
     }

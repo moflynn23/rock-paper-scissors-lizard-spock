@@ -84,7 +84,7 @@ header a {
 }
 
 #choices {
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -101,6 +101,12 @@ header a {
 .choice:hover {
     cursor: pointer;
     background: #24272E;
+}
+
+#moves {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px;
 }
 
 .green-glow {
