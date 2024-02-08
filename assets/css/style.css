@@ -85,9 +85,18 @@ button:hover {
     cursor: pointer;
 }*/
 
+.levels {
+    margin-top: 50px;
+    text-align: center;
+}
+
 .choices {
     margin-top: 50px;
     text-align: center;
+}
+
+.level:hover {
+    cursor: pointer;
 }
 
 .choice {
