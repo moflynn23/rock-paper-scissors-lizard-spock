@@ -10,6 +10,7 @@ const moves_div = document.getElementById("moves");
 
 // Reset scores and scoreboard.
 function resetScore() {
+    
     // reset scores
     userScore = 0;
     computerScore = 0;
@@ -28,7 +29,7 @@ function getBestOf() {
      // best of value selected
      bestOf = document.getElementById('best_of').value;
 
-     if (userScore >= bestOf) {
+     if (userScore >= bestOf && userScore != computerScore) {
 
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
@@ -37,11 +38,18 @@ function getBestOf() {
             });
         });
         
-    } else if (computerScore >= bestOf) {
+    } else if (computerScore >= bestOf && userScore != computerScore) {
 
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
                 alert('Game over. You lose.');
+                resetScore();
+            });
+        });
+    } else {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                alert("Game over. It's a draw.");
                 resetScore();
             });
         });
