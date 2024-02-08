@@ -8,13 +8,57 @@ const computerScore_span = document.getElementById("computer_score");
 const scoreBoard_div = document.querySelector(".scoreboard");
 const moves_div = document.getElementById("moves");
 
+// Reset scores
+function resetScore() {
+    // reset scores
+    userScore = 0;
+    computerScore = 0;
+
+    // reset scoreboard
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+}
+
+// Get Best Of games and update scores and scoreboard once met
+function getBestOf() {
+
+     // best of value selected
+     bestOf = document.getElementById('best_of').value;
+
+     if (userScore >= bestOf) {
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                alert('Game over. You win!');
+                resetScore();
+            });
+        });
+
+        /*setTimeout(function() {
+            alert('Game over. You win!');
+            resetScore();
+          }, 1000);*/
+        
+    } else if (computerScore >= bestOf) {
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                alert('Game over. You lose.');
+                resetScore();
+            });
+        });
+
+        /*setTimeout(function() {
+            alert('Game over. You lose!');
+            resetScore();
+          }, 1000);   */ 
+    }
+}
+
 function getResult(userChoice, computerChoice, result) {
 
     // difficulty level value selected
     difficultyLevel = document.getElementById('level').value;
-
-    // best of value selected
-    bestOf = document.getElementById('best_of').value;
     
     if (result === "win") {
         userScore++;    // increment user score
@@ -23,11 +67,7 @@ function getResult(userChoice, computerChoice, result) {
         moves_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
         scoreBoard_div.classList.add('green-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('green-glow') }, 600);
-
-        if (userScore >= bestOf) {
-            alert('Game over. You win!');
-        }
-
+        getBestOf();
     } else if (result === "lose") {
         // loop through difficulty level number
         for(let i=0; i<difficultyLevel; i++) {
@@ -38,6 +78,7 @@ function getResult(userChoice, computerChoice, result) {
         moves_div.innerHTML = `${userChoice} loses to ${computerChoice}. You lose.`;
         scoreBoard_div.classList.add('red-glow');
         setTimeout(function() { scoreBoard_div.classList.remove('red-glow') }, 600);
+        getBestOf();
     } else {
         moves_div.innerHTML = `${userChoice} draws with ${computerChoice}. It's a draw.`;
         scoreBoard_div.classList.add('gray-glow');
