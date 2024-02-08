@@ -103,14 +103,6 @@ header a {
     background: #24272E;
 }
 
-#action_message {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
-}
-
 .green-glow {
     border: 3px solid #4dcc7d;
     box-shadow: 0 0 10px #31b43a;
@@ -141,3 +133,15 @@ header a {
     z-index: 10;
     padding-left: 1000px;
 }
+
+input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+  }

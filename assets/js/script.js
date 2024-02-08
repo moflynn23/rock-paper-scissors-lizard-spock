@@ -8,7 +8,7 @@ const computerScore_span = document.getElementById("computer_score");
 const scoreBoard_div = document.querySelector(".scoreboard");
 const moves_div = document.getElementById("moves");
 
-// Reset scores
+// Reset scores and scoreboard.
 function resetScore() {
     // reset scores
     userScore = 0;
@@ -17,9 +17,12 @@ function resetScore() {
     // reset scoreboard
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
+
+    // Make your move.
+    moves_div.innerHTML = "Make your move."
 }
 
-// Get Best Of games and update scores and scoreboard once met
+// Check if best of score met and if so show alert and call resetScore function.
 function getBestOf() {
 
      // best of value selected
@@ -45,6 +48,7 @@ function getBestOf() {
     }
 }
 
+// Check result, increment scores, update scoreboard, results message and add glow to scoreboard.
 function getResult(userChoice, computerChoice, result) {
 
     // difficulty level value selected
@@ -76,6 +80,7 @@ function getResult(userChoice, computerChoice, result) {
     }
 }
 
+// Compare user choice vs computer choice to see who wins.
 function play(playerChoice) {
     const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
