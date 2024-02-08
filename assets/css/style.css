@@ -158,3 +158,37 @@ input[type=reset] {
     cursor: pointer;
     font-size: 16px;
   }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 22px;
+    left: 40px;
+    background: #3a3a3a;
+    list-style-type: none;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .tooltip .tooltiptext {
+        position: absolute;
+        left: auto;
+        right: -50px;
+        top: 20px;
+      }
+  }
