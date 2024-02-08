@@ -126,6 +126,7 @@ header a {
     background-color: white;
     color: rgb(43, 38, 38);
     text-align: center;
+    padding: 10px;
   }
 
 #weather {
