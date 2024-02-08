@@ -27,11 +27,13 @@
       <span id="computer_score"> 0 </span>
     </div>
 
-    <input name="reset" type="reset" value="Restart Game" onClick="resetScore();">
+    <div class="resets">
+      <input name="reset" type="reset" value="Restart Game" onClick="resetScore();">
+    </div>
 
     <!-- difficulty level -->
     <div id="levels">
-      <label for="level">Choose a difficulty level:</label>
+      <label for="level">Difficulty Level:</label>
 
       <select name="level" id="level">
         <option value="1" selected>Easy</option>
@@ -43,7 +45,7 @@
     <!-- best of games -->
     <div id="best_ofs">
       
-      <label for="best_of">Choose best of:</label>
+      <label for="best_of">Best of Games:</label>
 
       <select name="best_of" id="best_of">
         <option value="2" selected>Three</option>
