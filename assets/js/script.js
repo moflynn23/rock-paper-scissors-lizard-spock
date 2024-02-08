@@ -33,11 +33,6 @@ function getBestOf() {
                 resetScore();
             });
         });
-
-        /*setTimeout(function() {
-            alert('Game over. You win!');
-            resetScore();
-          }, 1000);*/
         
     } else if (computerScore >= bestOf) {
 
@@ -47,11 +42,6 @@ function getBestOf() {
                 resetScore();
             });
         });
-
-        /*setTimeout(function() {
-            alert('Game over. You lose!');
-            resetScore();
-          }, 1000);   */ 
     }
 }
 
