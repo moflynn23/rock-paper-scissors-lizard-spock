@@ -64,7 +64,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: #1A2E46;
+    color: rgb(43, 38, 38);
 }
 
 #levels {
@@ -119,12 +119,14 @@ header a {
 }
 
 .footer {
-    color: white;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     left: 0;
-    z-index: 10;
-}
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgb(43, 38, 38);
+    text-align: center;
+  }
 
 #weather {
     position: absolute;
