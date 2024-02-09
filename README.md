@@ -1,39 +1,95 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rochambeau
 
-Welcome,
+Rochambeau is the latest Rock, Paper, Scissors, Lizard, Spock game made with technologies such as HTML, CSS & JavaScript! Are you ready to dive into the timeless thrill of Rock-Paper-Scissors like never before? Look no further! Rochameua is here to revolutionize your gaming experience! Download Rochambeau now and embark on an epic gaming adventure unlike any other. The ultimate Rock-Paper-Scissors experience awaits – are you up to the challenge?
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+With Rochameua, every match is a new adventure! Are you ready to rock, paper, scissors your way to victory? Make your move.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+![Responsice Mockup](https://imgur.com/cb5Dx1g.png)
 
-## Codeanywhere Reminders
+## Features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __The Game__
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - Our version of the timeless game adds an extra layer of complexity and excitement with two additional moves, making it even more engaging and strategic. With sleek design and smooth gameplay, this rendition brings the classic game to life in a whole new way, providing endless entertainment for players of all ages.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+![The Game](https://imgur.com/MjxMDMM.png)
 
-`http_server`
+- __The Scoreboard__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - Keep tabs on your victories and defeats with the built-in scoreboard feature. When challenging the computer, the scoreboard offers a clear overview of your progress. Watch your win count climb as you sharpen your skills and strive to dominate the competition!
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![The Scoreboard](https://imgur.com/tCaeTME.png)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Instructions__
 
-To log into the Heroku toolbelt CLI:
+  - New to Rock, Paper, Scissors, Lizard, Spock? No worries! Our game includes comprehensive instructions to help you get started. Learn the rules, understand the nuances of each move, and discover winning strategies to outmaneuver your opponents. With easy-to-follow guidance, you'll be ready to jump into the action and start playing like a pro in no time.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![The Instructions](https://imgur.com/r8twuWq.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Difficulty Level__
 
----
+  - Feeling daring? Adjust the difficulty level to suit your skill level and gaming preferences with Easy, Medium & Hard difficulty. Whether you're looking for a relaxed experience or a hair-raising challenge, our game offers customizable difficulty settings to cater to players of all abilities.
 
-Happy coding!
+![Difficulty Level](https://imgur.com/wgPMHl3.png)
+
+- __Best of Games__
+
+  - Best of Games mode adds an extra layer of intensity and excitement to the gameplay with Three, Five, Seven & Ten. With multiple rounds of Rock, Paper, Scissors, Lizard, Spock action, it's an adrenaline-fueled showdown you won't soon forget! 
+
+![Best of Games](https://imgur.com/hc1fB3V.png)
+
+- __The Moves__ 
+
+  - At the heart of the game are the iconic moves: Rock, Paper, Scissors, Lizard, and Spock. Each move has its own strengths and weaknesses, creating a dynamic battlefield where strategy reigns supreme. Whether you're crushing your opponent with the might of a rock or outsmarting them with the intellect of Spock, every choice you make can tip the scales of victory in your favor. All neatly designed for desktop and mobile.
+
+![The Moves](https://imgur.com/FBMwY7B.png)
+
+## Testing 
+
+All of our project’s features are working as intended. The project was an easy and straightforward way for the users to particapte in the game.
+
+The project looks and works on different browsers and screen sizes, like mobile and tablet.
+
+There were not any large, unfixable issues arrising, during development. Mark came up with a great way to increase the difficulty of the game - The computer is assigned 2 points, if it wins.
+
+
+### Validator Testing 
+
+- HTML
+  - Small, unproblematic syntax errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+
+### Unfixed Bugs
+
+The game is working perfectly and as expected. Any bugs reported in the W3C HTML Validator have been resolved.
+The game works as expected on Mobile also and is very responsive in a neat manner.
+
+## Deployment
+
+The project was deployed to the GitHub pages hosting platform.
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://moflynn23.github.io/rock-paper-scissors-lizard-spock/index.html
+
+
+## Credits 
+
+### Content 
+
+- All text was created by the wolfpack team.
+- The game logic was mostly created by Mark & Vini.
+
+### Media
+
+- The Favicon was taken from here: https://rb.gy/vgecdc
+- The images used for the buttons were taken from font-awesome.
+
+
+Thank you for reading.
