@@ -172,7 +172,8 @@ input[type=reset] {
     text-align: left;
     border-radius: 6px;
     padding: 5px 22px;
-    left: 40px;
+    left: 30px;
+    top: 0px;
     background: #3a3a3a;
     list-style-type: none;
   
@@ -189,7 +190,7 @@ input[type=reset] {
     .tooltip .tooltiptext {
         position: absolute;
         left: auto;
-        right: -50px;
+        right: -40px;
         top: 20px;
       }
   }
