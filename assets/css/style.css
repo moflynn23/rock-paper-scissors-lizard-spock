@@ -84,7 +84,7 @@ header a {
 }
 
 #choices {
-    margin: 30px auto;
+    margin: 10px 0 30px;
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ header a {
 #moves {
     font-weight: bold;
     font-size: 28px;
-    margin: 20px;
+    margin: 30px 0 10px;
 }
 
 .green-glow {
