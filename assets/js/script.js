@@ -103,6 +103,4 @@ function play(playerChoice) {
         getResult(playerChoice, computerChoice, "lose");
         result = "Computer wins!";
     }
-    // Display result
-    //document.getElementById('result').innerHTML = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
   }
